@@ -1,0 +1,259 @@
+# Reading D:/altera/modelsim_ase/tcl/vsim/pref.tcl 
+# do MatrixAccelerator_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying D:\altera\modelsim_ase\win32aloem/modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {MatrixAccelerator.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module matrix_accel_top_systolic_array
+# 
+# Top level modules:
+# 	matrix_accel_top_systolic_array
+# 
+# vlog -vlog01compat -work work +incdir+D:/ProjectSoC2/DoAnSoC_new {D:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_systolic_3x3
+# 
+# Top level modules:
+# 	tb_systolic_3x3
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L cycloneii_ver -L gate_work -L work -voptargs="+acc"  tb_systolic_3x3
+# vsim +transport_int_delays +transport_path_delays -L cycloneii_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps tb_systolic_3x3 
+# Loading work.tb_systolic_3x3
+# Loading work.matrix_accel_top_systolic_array
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_mac_out
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
+# Loading cycloneii_ver.cycloneii_mac_mult
+# Loading cycloneii_ver.cycloneii_mac_data_reg
+# Loading cycloneii_ver.cycloneii_mac_sign_reg
+# Loading cycloneii_ver.cycloneii_mac_mult_internal
+# Loading instances from MatrixAccelerator_v.sdo
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: Design size of 2 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# Loading timing data from MatrixAccelerator_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_systolic_3x3 File: D:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# =========================================================
+#       BAT DAU TEST SYSTOLIC ARRAY MATRIX 3x3
+# =========================================================
+# [1] Dang nap Ma tran A...
+# [2] Dang nap Ma tran B...
+# [3] Phat lenh START, kich hoat 9 PEs...
+# [4] Dang doi FSM hoan thanh Pipeline...
+#     -> Da nhan co DONE tu Hardware!
+# 
+# =========================================================
+#           KET QUA MA TRAN C 
+#      (Ky vong: Cheo chinh la 10.00, Cac o khac la 13.00)
+# =========================================================
+# 
+# Row  0:     10.00 (Hex: 0x4900) |    13.00 (Hex: 0x4a80) |    13.00 (Hex: 0x4a80) | 
+# Row  1:     13.00 (Hex: 0x4a80) |    10.00 (Hex: 0x4900) |    13.00 (Hex: 0x4a80) | 
+# Row  2:     13.00 (Hex: 0x4a80) |    13.00 (Hex: 0x4a80) |    10.00 (Hex: 0x4900) | 
+# 
+# =========================================================
+# ** Note: $finish    : D:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v(170)
+#    Time: 1970 ns  Iteration: 1  Instance: /tb_systolic_3x3
+# WARNING: No extended dataflow license exists
+# 1
+# Break in Module tb_systolic_3x3 at D:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v line 170
+# Simulation Breakpoint: 1
+# Break in Module tb_systolic_3x3 at D:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v line 170
+# MACRO ./MatrixAccelerator_run_msim_gate_verilog.do PAUSED at line 17
+
+restart -f
+vcd file power_sim.vcd
+vcd add -r /tb_systolic_3x3/uut/*
+# Loading instances from MatrixAccelerator_v.sdo
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# Loading timing data from MatrixAccelerator_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_systolic_3x3 File: D:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v
+# ** Error: (vsim-3561) No objects found matching 'uut'.
+run -all
+# =========================================================
+#       BAT DAU TEST SYSTOLIC ARRAY MATRIX 3x3
+# =========================================================
+# [1] Dang nap Ma tran A...
+# [2] Dang nap Ma tran B...
+# [3] Phat lenh START, kich hoat 9 PEs...
+# [4] Dang doi FSM hoan thanh Pipeline...
+#     -> Da nhan co DONE tu Hardware!
+# 
+# =========================================================
+#           KET QUA MA TRAN C 
+#      (Ky vong: Cheo chinh la 10.00, Cac o khac la 13.00)
+# =========================================================
+# 
+# Row  0:     10.00 (Hex: 0x4900) |    13.00 (Hex: 0x4a80) |    13.00 (Hex: 0x4a80) | 
+# Row  1:     13.00 (Hex: 0x4a80) |    10.00 (Hex: 0x4900) |    13.00 (Hex: 0x4a80) | 
+# Row  2:     13.00 (Hex: 0x4a80) |    13.00 (Hex: 0x4a80) |    10.00 (Hex: 0x4900) | 
+# 
+# =========================================================
+# ** Note: $finish    : D:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v(170)
+#    Time: 1970 ns  Iteration: 1  Instance: /tb_systolic_3x3
+# 1
+# Break in Module tb_systolic_3x3 at D:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v line 170
+pwd
+# D:/ProjectSoC2/DoAnSoC_new/simulation/modelsim
+restart -f
+# Closing VCD file "power_sim.vcd"
+# Loading instances from MatrixAccelerator_v.sdo
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6778): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# ** Warning: (vsim-8607) D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(6779): Non-positive replication multiplier inside concat. Replication will be ignored.
+# 
+# Loading timing data from MatrixAccelerator_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_systolic_3x3 File: D:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v
+vcd file power_sim.vcd
+vcd add -r /*
+run -all
+# =========================================================
+#       BAT DAU TEST SYSTOLIC ARRAY MATRIX 3x3
+# =========================================================
+# [1] Dang nap Ma tran A...
+# [2] Dang nap Ma tran B...
+# [3] Phat lenh START, kich hoat 9 PEs...
+# [4] Dang doi FSM hoan thanh Pipeline...
+#     -> Da nhan co DONE tu Hardware!
+# 
+# =========================================================
+#           KET QUA MA TRAN C 
+#      (Ky vong: Cheo chinh la 10.00, Cac o khac la 13.00)
+# =========================================================
+# 
+# Row  0:     10.00 (Hex: 0x4900) |    13.00 (Hex: 0x4a80) |    13.00 (Hex: 0x4a80) | 
+# Row  1:     13.00 (Hex: 0x4a80) |    10.00 (Hex: 0x4900) |    13.00 (Hex: 0x4a80) | 
+# Row  2:     13.00 (Hex: 0x4a80) |    13.00 (Hex: 0x4a80) |    10.00 (Hex: 0x4900) | 
+# 
+# =========================================================
+# ** Note: $finish    : D:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v(170)
+#    Time: 1970 ns  Iteration: 1  Instance: /tb_systolic_3x3
+# 1
+# Break in Module tb_systolic_3x3 at D:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v line 170
+vcd flush

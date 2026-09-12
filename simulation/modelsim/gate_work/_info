@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\ProjectSoC2\DoAnSoC_new\simulation\modelsim
+vmatrix_accel_top_systolic_array
+I>F2Gh6GViLdoQM7]mBgjL2
+VjY;DgXgXzMQHT@i:Gld3z2
+Z1 dD:\ProjectSoC2\DoAnSoC_new\simulation\modelsim
+w1780242408
+8MatrixAccelerator.vo
+FMatrixAccelerator.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 gSD0P=A_Zd_dYT`[gSnmz1
+!s85 0
+!s108 1780242750.740000
+!s107 MatrixAccelerator.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|MatrixAccelerator.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vtb_systolic_3x3
+!i10b 1
+!s100 mFfJV@G@HLPQ8zDk`[iCS3
+IBhZ5=Il]KU@J:Xf_45GD02
+VXf[@3@i2T6TYAGlgPch>o0
+R1
+w1780135737
+8D:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v
+FD:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1780242751.151000
+!s107 D:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ProjectSoC2/DoAnSoC_new|D:/ProjectSoC2/DoAnSoC_new/tb_systolic_3x3.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+D:/ProjectSoC2/DoAnSoC_new -O0

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="MatrixAccelerator">
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|matrix_accel_top_systolic_array:matrix_accel_top_systolic_aray_0|systolic_array:sys_arr_inst|pe_fp16:row[0].col[0].pe_inst|fp16_mac:mac_inst|fp16_mult:u_mult|lpm_mult:Mult0" CBX_FILE_NAME="mult_a8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|matrix_accel_top_systolic_array:matrix_accel_top_systolic_aray_0|systolic_array:sys_arr_inst|pe_fp16:row[2].col[2].pe_inst|fp16_mac:mac_inst|fp16_mult:u_mult|lpm_mult:Mult0" CBX_FILE_NAME="mult_a8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|system_nios2_qsys_0:nios2_qsys_0|system_nios2_qsys_0_nios2_oci:the_system_nios2_qsys_0_nios2_oci|system_nios2_qsys_0_nios2_ocimem:the_system_nios2_qsys_0_nios2_ocimem|system_nios2_qsys_0_ociram_sp_ram_module:system_nios2_qsys_0_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_p681.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|system_nios2_qsys_0:nios2_qsys_0|system_nios2_qsys_0_register_bank_b_module:system_nios2_qsys_0_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_mpg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|matrix_accel_top_systolic_array:matrix_accel_top_systolic_aray_0|systolic_array:sys_arr_inst|pe_fp16:row[0].col[1].pe_inst|fp16_mac:mac_inst|fp16_mult:u_mult|lpm_mult:Mult0" CBX_FILE_NAME="mult_a8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|matrix_accel_top_systolic_array:matrix_accel_top_systolic_aray_0|systolic_array:sys_arr_inst|pe_fp16:row[1].col[0].pe_inst|fp16_mac:mac_inst|fp16_mult:u_mult|lpm_mult:Mult0" CBX_FILE_NAME="mult_a8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|system_onchip_memory2_0:onchip_memory2_0|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_gsc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|matrix_accel_top_systolic_array:matrix_accel_top_systolic_aray_0|systolic_array:sys_arr_inst|pe_fp16:row[0].col[2].pe_inst|fp16_mac:mac_inst|fp16_mult:u_mult|lpm_mult:Mult0" CBX_FILE_NAME="mult_a8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|matrix_accel_top_systolic_array:matrix_accel_top_systolic_aray_0|systolic_array:sys_arr_inst|pe_fp16:row[1].col[1].pe_inst|fp16_mac:mac_inst|fp16_mult:u_mult|lpm_mult:Mult0" CBX_FILE_NAME="mult_a8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|matrix_accel_top_systolic_array:matrix_accel_top_systolic_aray_0|systolic_array:sys_arr_inst|pe_fp16:row[2].col[0].pe_inst|fp16_mac:mac_inst|fp16_mult:u_mult|lpm_mult:Mult0" CBX_FILE_NAME="mult_a8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|system_jtag_uart_0:jtag_uart_0|system_jtag_uart_0_scfifo_w:the_system_jtag_uart_0_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|system_nios2_qsys_0:nios2_qsys_0|system_nios2_qsys_0_register_bank_a_module:system_nios2_qsys_0_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_lpg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|matrix_accel_top_systolic_array:matrix_accel_top_systolic_aray_0|systolic_array:sys_arr_inst|pe_fp16:row[1].col[2].pe_inst|fp16_mac:mac_inst|fp16_mult:u_mult|lpm_mult:Mult0" CBX_FILE_NAME="mult_a8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|matrix_accel_top_systolic_array:matrix_accel_top_systolic_aray_0|systolic_array:sys_arr_inst|pe_fp16:row[2].col[1].pe_inst|fp16_mac:mac_inst|fp16_mult:u_mult|lpm_mult:Mult0" CBX_FILE_NAME="mult_a8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_top|system:Nios_system|system_jtag_uart_0:jtag_uart_0|system_jtag_uart_0_scfifo_r:the_system_jtag_uart_0_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

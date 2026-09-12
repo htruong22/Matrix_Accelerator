@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\ProjectSoC2\DoAnSoC_new\simulation\modelsim
+vfp16_add
+I:7UEgmQ8PBGAHigN43lPk2
+V[6HYCDBlQ@`Z;lj3BK;]32
+Z1 dD:\ProjectSoC2\DoAnSoC_new\simulation\modelsim
+Z2 w1779954776
+8D:/ProjectSoC2/DoAnSoC_new/fp16_add.v
+FD:/ProjectSoC2/DoAnSoC_new/fp16_add.v
+L0 3
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work +incdir+D:/ProjectSoC2/DoAnSoC_new -O0
+!i10b 1
+!s100 a1Uof15FSz_fH@XSRI9FY3
+!s85 0
+!s108 1780213052.445000
+!s107 D:/ProjectSoC2/DoAnSoC_new/fp16_add.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ProjectSoC2/DoAnSoC_new|D:/ProjectSoC2/DoAnSoC_new/fp16_add.v|
+!s101 -O0
+vfp16_mac
+IzJ`OKa4G]ZIHSPB=JffN61
+VQVOaWSnNC`HTAaKVULoOW3
+R1
+R2
+8D:/ProjectSoC2/DoAnSoC_new/fp16_mac.v
+FD:/ProjectSoC2/DoAnSoC_new/fp16_mac.v
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 Wh2XoHSbQz[em;8AMOMP?0
+!s85 0
+!s108 1780213052.374000
+!s107 D:/ProjectSoC2/DoAnSoC_new/fp16_mac.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ProjectSoC2/DoAnSoC_new|D:/ProjectSoC2/DoAnSoC_new/fp16_mac.v|
+!s101 -O0
+vfp16_mult
+IadYYnUe0h9Xb43Ho;X?b11
+VQE]XAh`XW1K:H5SDzFXHc1
+R1
+R2
+8D:/ProjectSoC2/DoAnSoC_new/fp16_mult.v
+FD:/ProjectSoC2/DoAnSoC_new/fp16_mult.v
+L0 3
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 PWFZ:HKJ^Hh^<cQ4K>c_`1
+!s85 0
+!s108 1780213052.409000
+!s107 D:/ProjectSoC2/DoAnSoC_new/fp16_mult.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ProjectSoC2/DoAnSoC_new|D:/ProjectSoC2/DoAnSoC_new/fp16_mult.v|
+!s101 -O0
+vmatrix_accel_top_systolic_array
+Ibi9Co7C?LX4ig5iOH6zQo0
+VK5:`k?OXa^dW:C7mzK8P@0
+R1
+w1780130647
+8D:/ProjectSoC2/DoAnSoC_new/matrix_accel_top_systolic_array.v
+FD:/ProjectSoC2/DoAnSoC_new/matrix_accel_top_systolic_array.v
+L0 3
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 d3YcbAja?EnXL>ecG26@l3
+!s85 0
+!s108 1780213052.331000
+!s107 D:/ProjectSoC2/DoAnSoC_new/matrix_accel_top_systolic_array.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ProjectSoC2/DoAnSoC_new|D:/ProjectSoC2/DoAnSoC_new/matrix_accel_top_systolic_array.v|
+!s101 -O0
+vpe_fp16
+IiTC7d6D[m8QFW4:<kXgj`3
+VZI1=4C1PPU`MDgV_UL7JS0
+R1
+w1780129799
+8D:/ProjectSoC2/DoAnSoC_new/pe_fp16.v
+FD:/ProjectSoC2/DoAnSoC_new/pe_fp16.v
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 LlSEZI8?Gnl7RiJJ<biW22
+!s85 0
+!s108 1780213052.482000
+!s107 D:/ProjectSoC2/DoAnSoC_new/pe_fp16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ProjectSoC2/DoAnSoC_new|D:/ProjectSoC2/DoAnSoC_new/pe_fp16.v|
+!s101 -O0
+vskew_buffer
+I_PQRdRZ>R]=oNRgVL[dJ12
+V:902:H<CJVX23IYM[4@cE3
+R1
+w1779951695
+8D:/ProjectSoC2/DoAnSoC_new/skew_buffer.v
+FD:/ProjectSoC2/DoAnSoC_new/skew_buffer.v
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 WDo?56Y`EcAme;:;lm=k_1
+!s85 0
+!s108 1780213052.534000
+!s107 D:/ProjectSoC2/DoAnSoC_new/skew_buffer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ProjectSoC2/DoAnSoC_new|D:/ProjectSoC2/DoAnSoC_new/skew_buffer.v|
+!s101 -O0
+vsystolic_array
+I2JN@6HaGAY[860FTQNHPC0
+Vl2aSkD713<gRY<DAYG??P1
+R1
+w1780130259
+8D:/ProjectSoC2/DoAnSoC_new/systolic_array.v
+FD:/ProjectSoC2/DoAnSoC_new/systolic_array.v
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 o_M3KZN@Yll?CZ?U40Y381
+!s85 0
+!s108 1780213052.569000
+!s107 D:/ProjectSoC2/DoAnSoC_new/systolic_array.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ProjectSoC2/DoAnSoC_new|D:/ProjectSoC2/DoAnSoC_new/systolic_array.v|
+!s101 -O0
+vtb_systolic_16x16
+!i10b 1
+!s100 R_mYPRib^?5HN_bG[OBmH3
+I@ebW7l[lSeNgCnaXOmN4?3
+V`LX@cGa_U9bEj0cE`a=RW0
+R1
+w1779958170
+8D:/ProjectSoC2/DoAnSoC_new/tb_systolic_16x16.v
+FD:/ProjectSoC2/DoAnSoC_new/tb_systolic_16x16.v
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1780213052.603000
+!s107 D:/ProjectSoC2/DoAnSoC_new/tb_systolic_16x16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ProjectSoC2/DoAnSoC_new|D:/ProjectSoC2/DoAnSoC_new/tb_systolic_16x16.v|
+!s101 -O0
+R4
+R5

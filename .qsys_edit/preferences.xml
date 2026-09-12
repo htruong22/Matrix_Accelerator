@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="111" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="226" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="376" />
+   <clocksource preferredWidth="374" />
+   <frequency preferredWidth="359" />
+  </columns>
+ </clocktable>
+ <window width="1551" height="800" x="0" y="0" />
+ <library
+   expandedCategories="Library/Verification,Project,Library/Verification/Debug &amp; Performance,Library/Interface Protocols/Serial,Library/Bridges,Library,Library/Bridges/Memory-Mapped,Library/Interface Protocols" />
+</preferences>

@@ -1,0 +1,144 @@
+/*
+ * source.c
+ *
+ * Created on: 28-05-2026
+ * Author: Gigabyte
+ * Fixed for 3x3 Matrix matching current RTL behavior
+ */
+
+#include <stdio.h>
+#include <unistd.h>
+#include "system.h"
+#include "io.h"
+
+// Dinh nghia cac Base Offset tuong ung voi thiet ke RTL (Nhan 4 vi dia chi Byte-addressing trong C)
+#define ACCEL_CTRL_REG   (MATRIX_ACCEL_TOP_SYSTOLIC_ARAY_0_BASE + (0x000 * 4))
+#define ACCEL_MEM_A      (MATRIX_ACCEL_TOP_SYSTOLIC_ARAY_0_BASE + (0x400 * 4))
+#define ACCEL_MEM_B      (MATRIX_ACCEL_TOP_SYSTOLIC_ARAY_0_BASE + (0x800 * 4))
+#define ACCEL_MEM_C      (MATRIX_ACCEL_TOP_SYSTOLIC_ARAY_0_BASE + (0xC00 * 4))
+
+
+#define N 3
+
+// [FIXED]: Ma tran A (3x3 = 9 phan tu) - Lay dung 9 phan tu dau cua mang du lieu cu
+const unsigned short matrix_A_fp16[N*N] = {
+    0x3E00, 0x4100, 0xB800, // Row 0:  1.50,  2.50, -0.50
+    0x3C00, 0x3400, 0xBD00, // Row 1:  1.00,  0.25, -1.25
+    0x4200, 0x0000, 0x3C00  // Row 2:  3.00,  0.00,  1.00
+};
+
+// [FIXED]: Ma tran B (3x3 = 9 phan tu) - Lay dung 9 phan tu dau cua mang du lieu cu
+const unsigned short matrix_B_fp16[N*N] = {
+    0x3800, 0x3E00, 0xC000, // Row 0:  0.50,  1.50, -2.00
+    0x3C00, 0x4100, 0xB800, // Row 1:  1.00,  2.50, -0.50
+    0x3D00, 0x4000, 0xBC00  // Row 2:  1.25,  2.00, -1.00
+};
+
+// Ham bo tro chuyen doi nhanh FP16 sang Float 32-bit tren CPU
+float fp16_to_float(unsigned short fp16) {
+    unsigned int sign = (fp16 >> 15) & 0x1;
+    unsigned int exp  = (fp16 >> 10) & 0x1F;
+    unsigned int frac = fp16 & 0x3FF;
+    unsigned int f32_val = 0;
+
+    if (exp == 0) {
+        if (frac == 0) return sign ? -0.0f : 0.0f;
+        float res = (float)frac / 1024.0f * (1.0f / 16384.0f);
+        return sign ? -res : res;
+    } else if (exp == 0x1F) {
+        return 0.0f; // Infinity hoac NaN
+    }
+
+    unsigned int f32_sign = sign << 31;
+    unsigned int f32_exp  = (exp - 15 + 127) << 23;
+    unsigned int f32_frac = frac << 13;
+    f32_val = f32_sign | f32_exp | f32_frac;
+
+    return *((float*)&f32_val);
+}
+
+int main() {
+    printf("=====================================================\n");
+    printf("    NIOS II - KICH HOAT PHAN CUNG SYSTOLIC ARRAY %dx%d\n", N, N);
+    printf("=====================================================\n");
+
+    int i, j;
+    unsigned int status = 0;
+
+    // -----------------------------------------------------------------
+    // Kich ban 1: Software Reset - Lam sach bo nho C
+    // -----------------------------------------------------------------
+    printf("[0] CPU dang thuc hien Software Reset...\n");
+    IOWR_32DIRECT(ACCEL_CTRL_REG, 0, 0x00000000);
+
+    for (i = 0; i < N * N; i++) {
+        IOWR_32DIRECT(ACCEL_MEM_C, i * 4, 0x00000000);
+    }
+
+    // -----------------------------------------------------------------
+    // Kich ban 2: Nap Ma tran A vao Bo nho cuc bo cua IP
+    // -----------------------------------------------------------------
+    printf("[1] Dang nap du lieu Ma tran A (So thap phan)...\n");
+    for (i = 0; i < N * N; i++) {
+        IOWR_32DIRECT(ACCEL_MEM_A, i * 4, (unsigned int)matrix_A_fp16[i]);
+    }
+
+    // -----------------------------------------------------------------
+    // Kich ban 3: Nap Ma tran B vao Bo nho cuc bo cua IP
+    // -----------------------------------------------------------------
+    printf("[2] Dang nap du lieu Ma tran B (So thap phan)...\n");
+    for (i = 0; i < N * N; i++) {
+        IOWR_32DIRECT(ACCEL_MEM_B, i * 4, (unsigned int)matrix_B_fp16[i]);
+    }
+
+    // -----------------------------------------------------------------
+    // Kich ban 4: Phat lenh START
+    // -----------------------------------------------------------------
+    printf("[3] Kich hoat lenh START (Ghi 0x01 vao Control Register)...\n");
+    IOWR_32DIRECT(ACCEL_CTRL_REG, 0, 0x00000001);
+
+    // -----------------------------------------------------------------
+    // Kich ban 5: Polling (Cho co DONE tu phan cung)
+    // -----------------------------------------------------------------
+    printf("[4] Dang Polling cho co DONE (Bit 1)...\n");
+    while (1) {
+        status = IORD_32DIRECT(ACCEL_CTRL_REG, 0);
+        if (status & 0x02) { // Kiem tra bit 1 (ctrl_done)
+            break;
+        }
+        usleep(1); // Tranh chiem dung bus lien tuc gay nghen mach
+    }
+    printf("    -> Bo tang toc bao DONE thanh cong!\n");
+
+    // -----------------------------------------------------------------
+    // Kich ban 6: Doc du lieu Ma tran C tu mach Hardware tra ve
+    // -----------------------------------------------------------------
+    printf("\n=====================================================\n");
+    printf("              KET QUA MA TRAN C DOC DUOC              \n");
+    printf("=====================================================\n");
+
+    for (i = 0; i < N; i++) {
+        printf("Row %2d: ", i);
+        for (j = 0; j < N; j++) {
+            int offset = (i * N + j) * 4;
+            unsigned int raw_data = IORD_32DIRECT(ACCEL_MEM_C, offset);
+            unsigned short fp16_res = (unsigned short)(raw_data & 0xFFFF);
+
+            float f_val = fp16_to_float(fp16_res);
+
+            int int_part = (int)f_val;
+            float abs_val = (f_val < 0) ? -f_val : f_val;
+            int frac_part = (int)((abs_val - (int)abs_val) * 100);
+
+            if ((f_val < 0) && (int_part == 0)) {
+                printf(" -%d.%02d (Hex: 0x%04X) | ", int_part, frac_part, fp16_res);
+            } else {
+                printf("%3d.%02d (Hex: 0x%04X) | ", int_part, frac_part, fp16_res);
+            }
+        }
+        printf("\n");
+    }
+    printf("=====================================================\n");
+
+    return 0;
+}

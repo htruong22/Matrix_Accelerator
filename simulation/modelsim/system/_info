@@ -1,0 +1,145 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\ProjectSoC2\DoAnSoC_new\simulation\modelsim
+vfp16_add
+Z1 !s100 kb_G879DF0FPD<05YkW>i1
+Z2 I>gZD7Dz2EgZmA=SXZ6Jb63
+Z3 V[6HYCDBlQ@`Z;lj3BK;]32
+Z4 dD:\ProjectSoC2\DoAnSoC_new\simulation\modelsim
+Z5 w1779953357
+Z6 8D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/fp16_add.v
+Z7 FD:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/fp16_add.v
+L0 3
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|system|+incdir+D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules|D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/fp16_add.v|
+Z10 o-vlog01compat -work system -O0
+Z11 !s92 -vlog01compat -work system +incdir+D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules -O0
+Z12 !s108 1779957165.627000
+Z13 !s107 D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/fp16_add.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vfp16_mac
+Z14 !s100 IKNRJIbC39?R;6SiA:TRR2
+Z15 IZYBCGGY5cP`U47nTXW<b<0
+Z16 VQVOaWSnNC`HTAaKVULoOW3
+R4
+R5
+Z17 8D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/fp16_mac.v
+Z18 FD:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/fp16_mac.v
+L0 1
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-vlog01compat|-work|system|+incdir+D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules|D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/fp16_mac.v|
+R10
+R11
+Z20 !s108 1779957165.664000
+Z21 !s107 D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/fp16_mac.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vfp16_mult
+Z22 !s100 gWKD8kd`J:YJFW41m:BAh3
+Z23 I1<>`g_L88B>]VC^TjjzEN1
+Z24 VQE]XAh`XW1K:H5SDzFXHc1
+R4
+R5
+Z25 8D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/fp16_mult.v
+Z26 FD:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/fp16_mult.v
+L0 3
+R8
+r1
+31
+Z27 !s90 -reportprogress|300|-vlog01compat|-work|system|+incdir+D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules|D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/fp16_mult.v|
+R10
+R11
+Z28 !s108 1779957165.698000
+Z29 !s107 D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/fp16_mult.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmatrix_accel_top_systolic_array
+Z30 !s100 zfDGYlF6Uhc50S5P45TS62
+Z31 I0OJH1Zol]Nd[lzIn_5=^L1
+Z32 VQ>WS3zmFJh?8?l2@T?3Z[0
+R4
+R5
+Z33 8D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/matrix_accel_top_systolic_array.v
+Z34 FD:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/matrix_accel_top_systolic_array.v
+L0 1
+R8
+r1
+31
+Z35 !s90 -reportprogress|300|-vlog01compat|-work|system|+incdir+D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules|D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/matrix_accel_top_systolic_array.v|
+R10
+R11
+Z36 !s108 1779957165.734000
+Z37 !s107 D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/matrix_accel_top_systolic_array.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vpe_fp16
+Z38 !s100 foE0MgEABPE15M<N?czHb1
+Z39 IoORj8]52n;0b9z8m4;oZ?2
+Z40 Vd6lcWDjQH=GPZVd_TX5bf0
+R4
+R5
+Z41 8D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/pe_fp16.v
+Z42 FD:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/pe_fp16.v
+L0 1
+R8
+r1
+31
+Z43 !s90 -reportprogress|300|-vlog01compat|-work|system|+incdir+D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules|D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/pe_fp16.v|
+R10
+R11
+Z44 !s108 1779957165.789000
+Z45 !s107 D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/pe_fp16.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vskew_buffer
+Z46 !s100 0haL3<PAUO5DA3n:92Dji0
+Z47 Iz_a;H7Uab>K8jWjAg@VaJ3
+Z48 V:902:H<CJVX23IYM[4@cE3
+R4
+R5
+Z49 8D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/skew_buffer.v
+Z50 FD:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/skew_buffer.v
+L0 1
+R8
+r1
+31
+Z51 !s90 -reportprogress|300|-vlog01compat|-work|system|+incdir+D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules|D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/skew_buffer.v|
+R10
+R11
+!i10b 1
+!s85 0
+Z52 !s108 1779957165.822000
+Z53 !s107 D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/skew_buffer.v|
+!s101 -O0
+vsystolic_array
+!i10b 1
+Z54 !s100 gN`Z7[jWTjkJgz^`9zPJ;1
+Z55 IWd=J9Y<>C6V]NUWEzD4j73
+Z56 V9H3@cj0UXTk4J4mA:R=e@2
+R4
+R5
+Z57 8D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/systolic_array.v
+Z58 FD:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/systolic_array.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1779957165.859000
+!s107 D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/systolic_array.v|
+Z59 !s90 -reportprogress|300|-vlog01compat|-work|system|+incdir+D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules|D:/ProjectSoC2/DoAnSoC_new/system/synthesis/submodules/systolic_array.v|
+!s101 -O0
+R10
+R11
